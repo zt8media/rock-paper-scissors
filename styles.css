@@ -1,0 +1,100 @@
+body{
+background-color: bisque;
+color: rgb(8, 8, 8);
+font-family: "Jersey 25", sans-serif;
+}
+
+.message{
+margin: 5rem 0 2rem;
+text-align: center;
+font-size: 40px;
+}
+
+.images{
+display: flex;
+justify-content: space-around;
+align-items: center;
+text-align: center;
+height:200px;
+margin: 50px;
+}
+.computer img, .player img{
+    width: 150%;
+
+}
+
+.points{
+    margin: 2rem 0;
+    text-align: center;
+height: 100%;
+font-size: 40px;
+}
+.computerPoints{
+    margin-right:-10em ;
+    font-size: 30px;
+    color: rgb(189, 92, 92);
+
+}
+.playerPoints{
+    margin-left: -10em;
+font-size: 30px;
+color: rgb(97, 219, 115);
+}
+#userChoice{
+border-radius: 7px;
+width: 11%;
+background: none;
+outline: none;
+white-space: nowrap;
+}
+
+.options{
+    margin-top:5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.options button{
+    background: none;
+    color: black;
+    font-family:"Jersey 25", sans-serif ;
+    border:1px solid white;
+    padding:1rem 2rem;
+    border-radius: 7px;
+    width: 150px;
+    white-space: nowrap;
+    cursor:pointer;
+    outline: none;
+}
+
+.options button:hover{
+background-color: rgb(202, 163, 104);
+border:1px solid rgb(20, 20, 19);
+}
+
+@media( max-width: 425px) {
+    
+    .options{
+        flex-direction:column;
+        gap:30px;
+        align-items: center;
+    
+}
+#userChoice{
+    width: 50%;
+    
+}
+.points{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images .player {
+margin-right: 80px;
+
+}
+
+
+}
